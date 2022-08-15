@@ -2,9 +2,10 @@
 
 * {
     margin: 0;
-    background-color: #fff;
+    /* background-color: #fff; */
     font-family: 'Poppins', sans-serif;
     /* box-sizing: border-box; */
+    /* outline: 2px solid limegreen ; */
 }
 
 .container {
@@ -53,7 +54,7 @@
 }
 
 .left-content {
-    width: 516px;
+    /* width: 516px; */
 }
 
 .main-description {
@@ -142,7 +143,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 590px;
-    width: 1070px;
+    /* width: 1070px; */
     background: none;
     margin: auto;
 }
@@ -303,7 +304,7 @@
 }
 
 .customer-love p {
-    width: 750px;
+    /* width: 750px; */
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -311,14 +312,14 @@
 .reviews {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 1170px;
+    /* width: 1170px; */
     margin: 0 auto;
 }
 
 .review {
     position: relative;
     height: 190px;
-    width: 500px;
+    /* width: 500px; */
     margin: 20px;
     padding: 20px;
     color: #5c5c5c;
@@ -379,4 +380,107 @@ footer h4 {
 
 .logo-div {
     width: 400px;
+}
+
+.blue-container {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(135deg, #18c7f9, #0792f1, #18c7f9, #0792f1);
+    color: #fff;
+    padding: 50px 100px;
+    align-items: center;
+}
+
+.blue-container h1 {
+    font-size: 50px;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.blue-container p {
+    width: 50%;
+}
+.pricing-table-wrapper {
+    gap: 20px;
+}
+
+.pricing-table {
+    background: #fff;
+}
+.pricing-table2 {
+    background: #fff;
+}
+
+@media (max-width: 360px) {
+.main-heading{
+    font-size: 20px;
+}
+    .services-img{
+        width: 22px;
+        height: 22px;
+    }
+    .services-heading {
+        font-size: 13px;
+    }
+    .services-description {
+        /* font-size: 10px; */
+        display: none;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer .logo-div p {
+        display: none;
+    }
+    .socials ul {
+        flex-direction: row;
+    }
+    .logo-div {
+        width: 100%;
+    }
+    .blue-container {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .blue-container h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+    .blue-container p {
+        width: 100%;
+    }
+    .review {
+        height: 284px;
+    }
+}
+
+@media (max-width: 728px){
+    nav .list {
+        display: none;
+    }
+    .reviews {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        margin: 20px;
+    }
+    .flex-row {
+        flex-direction: column;
+    }
+    .pricing-container {
+        height: 2100px;
+    }
+    .pricing-table-wrapper {
+        top: 25%;
+        gap: 20px;
+    }
+    .setting-img {
+        width: 100%;
+    }
+    .testing-img {
+        width: 100%;
+    }
+    .wrapper div {
+        margin: 15px;
+    }
 }
